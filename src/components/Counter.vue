@@ -2,8 +2,26 @@
   <div>
     <h2>Counter</h2>
     {{count}}
-    <button @click="increment">+</button>
-    <button @click="decrement">-</button>
+    <v-btn
+      class="mx-2"
+      fab
+      dark
+      small
+      color="indigo"
+      @click="increment"
+    >
+      <v-icon dark>mdi-plus</v-icon>
+    </v-btn>
+    <v-btn
+      class="mx-2"
+      fab
+      dark
+      small
+      color="indigo"
+      @click="decrement"
+    >
+      <v-icon dark>mdi-minus</v-icon>
+    </v-btn>
   </div>
 
 </template>

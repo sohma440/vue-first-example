@@ -1,11 +1,12 @@
 <template>
 
   <div>
-    <h2>Input text</h2>
-    <p>input: <input
-        type="text"
-        v-model="inputText"
-      ></p>
+
+    <h2>Input Text</h2>
+    <v-text-field
+      v-model="inputText"
+      label="Type here"
+    ></v-text-field>
     <p>text: {{ inputText }}</p>
   </div>
 
@@ -16,7 +17,7 @@ export default {
   name: "HelloWorld",
   data() {
     return {
-      inputText: "init text"
+      inputText: ""
     };
   }
 };

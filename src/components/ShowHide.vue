@@ -2,12 +2,10 @@
 
   <div>
     <h2>Show/Hide</h2>
-    <label for="checkbox">Show/Hide</label>
-    <input
-      type="checkbox"
-      id="checkbox"
+    <v-checkbox
       v-model="seen"
-    >
+      :label="`Show element`"
+    ></v-checkbox>
     <p v-if="seen">Now you see me</p>
   </div>
 </template>

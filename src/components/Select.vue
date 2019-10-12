@@ -1,17 +1,15 @@
 <template>
   <div>
     <h2>Select</h2>
-    <select v-model="selected">
-      <option
-        disabled
-        value='None'
-      >Please select one</option>
-      <option
-        v-for="item in itemList"
-        v-bind:key="item.key"
-      >{{item.value}}</option>
-    </select>
-    <p>Selected: {{ selected }}</p>
+    <v-select
+      v-model="selected"
+      item-text="key"
+      item-value="value"
+      :items="itemList"
+      label="select here"
+      return-object
+    />
+    <p>Selected: {{ selected.value }}</p>
   </div>
 </template>
 
